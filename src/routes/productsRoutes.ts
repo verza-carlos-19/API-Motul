@@ -5,16 +5,16 @@ import { checkRoleFromToken} from "../middleware/authMiddleware";
 
 const router = express.Router();
 
-router.post('/create', checkRoleFromToken('admin'), createProduct);
+router.post('/create', createProduct);
 
-router.post('/create-many', checkRoleFromToken('admin'), createManyProduct);
+router.post('/create-many', createManyProduct);
 
 router.get('/all', getAllProducts);
 
 router.get('/:id', getProductById);
 
-router.put('/:id',checkRoleFromToken('admin'), updateProduct);
+router.put('/:id', updateProduct);
 
-router.delete('/:id',checkRoleFromToken('admin'), deleteProduct);
+router.delete('/:id', deleteProduct);
 
 export default router;

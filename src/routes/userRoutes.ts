@@ -6,10 +6,10 @@ const router = Router();
 router.post('/register', registerUser);
 router.post('/login', loginUser);
 router.post('/verify-email', verifyUser);
-router.get('/client',checkRoleFromToken('admin'), getUserClients);
-router.get('/admin',checkRoleFromToken('admin'), getUserAdmins);
-router.get('/users',checkRoleFromToken('admin'), getAllUsers);
-router.delete('/users/:id',checkRoleFromToken('admin'), deleteUser);
+router.get('/client', getUserClients);
+router.get('/admin', getUserAdmins);
+router.get('/users', getAllUsers);
+router.delete('/users/:id', deleteUser);
 
 // router.post('/admin-route', checkRoleFromToken('admin'), (req, res) => {
 //     res.json({ message: 'Acceso permitido: Solo para administradores' });
