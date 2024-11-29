@@ -7,12 +7,11 @@ const express_1 = __importDefault(require("express"));
 const userRoutes_1 = __importDefault(require("./routes/userRoutes"));
 const productsRoutes_1 = __importDefault(require("./routes/productsRoutes"));
 const cors_1 = __importDefault(require("cors"));
-const port = process.env.PORT || 3000;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 app.use('/auth', userRoutes_1.default);
 app.use('/products', productsRoutes_1.default);
-app.listen(port, () => {
-    console.log('Servidor corriendo en el puerto' + port);
+app.listen(3000, () => {
+    console.log('Servidor corriendo en el puerto3000');
 });
