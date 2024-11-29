@@ -1,0 +1,8 @@
+la api cuenta con 17 endpoints, es una misma raiz que se divide en 2 ramas , users y products, la users permite registrarse, verificarse y determinar si es usuario o admin, permite loguearse y cerrar session
+ademas se pueden ver los datos de los usuarios, y los productos, tambien se pueden crear, editar y eliminar productos.
+
+tiene verificacion por token para saber si esta logueado el user y si es asi depende que sos te muestra una distinta ui 
+la api responde bien, fue subida en railways y esta hecha con prisma, postgres y typescript
+
+url de la api: https://api-motul-production-6208.up.railway.app
+url de la web: landing-motul.vercel.app
